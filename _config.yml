@@ -1,3 +1,8 @@
 theme: jekyll-theme-minimal
-title: Tigerduck's Playground
-description: Useful hint for programmers
+title: "Tigerduck's Playground"
+description: "Useful hint for programmers"
+
+
+#logo: assets/logo.png
+#show_downloads: true
+lang: en

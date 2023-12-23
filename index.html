@@ -1,1 +1,26 @@
-HelloWorld
+---
+layout: default
+title: "Overview"
+---
+
+<div class="home">
+
+    {% for post in site.posts %}
+    <span class="post-meta">
+        <small>
+            {{ post.date | date: "%d.%m.%Y" }}
+            von {{ post.author }}
+            {% if post.tags %}
+               zu <em>{{ post.tags | join: "</em> - <em>" }}</em>
+            {% endif %}
+        </small>
+    </span>
+    <h2>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+    </h2>
+    <p>
+        <em>{{ post.bait }}</em>
+    </p>
+    {% endfor %}
+
+</div>
